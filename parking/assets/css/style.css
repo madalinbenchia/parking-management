@@ -2488,3 +2488,12 @@ footer.site-footer {
   #cellPaiChart #pieLabel0 {
     left: inherit !important;
     right: 20px !important; }
+
+
+  .btn {
+      border-radius:10px;
+      font-size:12px;
+  }
+  .btn-info {
+      color:#fff !important;
+  }

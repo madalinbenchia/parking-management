@@ -1,9 +1,8 @@
 <!doctype html>
-
 <html class="no-js" lang="">
 <head>
 
-    <title>Manage Category</title>
+    <title>VPMS - Admin Profile</title>
 
 
     <link rel="apple-touch-icon" href="https://i.imgur.com/QRAUqs9.png">
@@ -20,6 +19,8 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
 
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script> -->
+
 </head>
 <body>
     <aside id="left-panel" class="left-panel">
@@ -30,13 +31,6 @@
                         <a href="index.html"><i class="menu-icon fa fa-laptop"></i>Dashboard </a>
                     </li>
 
-                    <li class="menu-item-has-children dropdown">
-                        <a href="" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-map"></i>Zones</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-table"></i><a href="addParkingZone.html">Add parking zone</a></li>
-                            <li><i class="fa fa-table"></i><a href="index.html">See parking zones</a></li>
-                        </ul>
-                    </li>
 
                     <li class="menu-item-has-children dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-table"></i>Vehicle Category</a>
@@ -127,8 +121,8 @@
                             <div class="page-title">
                                 <ol class="breadcrumb text-right">
                                     <li><a href="index.html">Dashboard</a></li>
-                                    <li><a href="manage-category.html">Category</a></li>
-                                    <li class="active">Manage Category</li>
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li class="active">Admin Profile</li>
                                 </ol>
                             </div>
                         </div>
@@ -139,52 +133,69 @@
 
         <div class="content">
             <div class="animated fadeIn">
+
+
                 <div class="row">
+                    <div class="col-lg-6">
+                        <div class="card">
+
+
+                        </div> <!-- .card -->
+
+                    </div><!--/.col-->
 
 
 
                     <div class="col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <strong class="card-title">Manage Category</strong>
+                                <strong>Admin </strong> Profile
                             </div>
-                            <div class="card-body">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                        <tr>
-                                            <th>S.NO</th>
+                            <div class="card-body card-block">
+                                <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="text-input" class=" form-control-label">Admin Name</label></div>
+                                        <div class="col-12 col-md-9"><input class=" form-control" id="adminname" name="adminname" type="text" value="Madalin"></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="email-input" class=" form-control-label">User Name</label></div>
+                                        <div class="col-12 col-md-9"><input class=" form-control" id="username" name="username" type="text" value="Smecher" readonly='true'></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="password-input" class=" form-control-label">Contact Number</label></div>
+                                        <div class="col-12 col-md-9"> <input class="form-control " id="contactnumber" name="contactnumber" type="text" value="07noidoi si ale tale buze moi" required="true"></div>
+                                    </div>
+                                    <div class="row form-group">
+                                        <div class="col col-md-3"><label for="disabled-input" class=" form-control-label">Email</label></div>
+                                        <div class="col-12 col-md-9"><input class="form-control " id="email" name="email" type="email" value="barosanu@valoare.aur" required="true" readonly='true'></div>
+                                    </div>
 
 
-                                            <th>Category</th>
 
-                                            <th>Action</th>
-                                        </tr>
-                                        </tr>
-                                    </thead>
-                                    <tr>
-                                        <td>1</td>
-
-
-                                        <td>Small vehicles</td>
-
-                                        <td><a href="#">Edit Details</a></td>
-                                    </tr>
-
-                                </table>
-
+                                    <p style="text-align: center;"> <button type="submit" class="btn btn-primary btn-sm" name="submit">Update</button></p>
+                                </form>
                             </div>
+
                         </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+
                     </div>
 
 
 
                 </div>
-            </div>
-        </div>
+
+
+            </div><!-- .animated -->
+        </div><!-- .content -->
 
         <div class="clearfix"></div>
 
+        <!-- Footer -->
         <footer class="site-footer">
             <div class="footer-inner bg-white">
                 <div class="row">
@@ -196,7 +207,9 @@
             </div>
         </footer>
 
-    </div>
+
+    </div><!-- /#right-panel -->
+    <!-- Right Panel -->
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
